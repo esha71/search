@@ -19,7 +19,7 @@ h1 {
 }
 .grid{
     display: grid;
-    grid-template-columns: 20% 40% 35%;
+    grid-template-columns: 20% auto 35%;
     grid-gap: 0.4rem;
     margin: 1rem;
 }
@@ -89,8 +89,8 @@ input.button:hover{
     margin:0.2rem;
     border: 0.2rem solid #dadce0;
 }
-@media only screen and (max-width: 1000px) {
-    .grid{
-        grid-template-columns: 30% 65% hidden;
+@media only screen and (max-width: 1056px) {
+    .help{
+        visibility: hidden;
     }
 }
