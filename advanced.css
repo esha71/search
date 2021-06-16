@@ -1,0 +1,96 @@
+/* body{
+    display: flex;
+} */
+html{
+    font-size: 16px;
+}
+label{
+    display: flex;
+    align-items: center;
+}
+body, input, label, button {
+    font-size: 0.85rem;
+    font-family: sans-serif, arial;
+    color: #222;
+}
+h1 {
+    font-size: 1.2rem;
+    color: #d93025;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 20% auto 35%;
+    grid-gap: 0.4rem;
+    margin: 1rem;
+}
+.rowgs{
+   
+   justify-content: space-evenly;
+    width:100%;
+    margin: 0.5rem;
+}
+.hr{
+    border-bottom: 1px solid #ebebeb;
+    grid-column: 1/4;
+    margin-bottom:1.5rem;
+}
+.buttonrow{
+    margin-top: 0.7rem;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: right;
+}
+nav{
+    text-align: right; 
+  /*  float:right;
+    bottom: 0%;
+    justify-content: end;*/
+    grid-column: 2/4;
+}
+nav a{
+    display: inline-block;
+    margin:5px;
+    text-decoration: none;
+    color: #222;
+    bottom:0px;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+nav a:visited{
+    text-decoration: none;
+}
+.pageCenter{
+    text-align:center;
+  
+}
+img{
+    padding:1rem;
+    height: 2.5rem;
+    display: inline-block;
+}
+input[type="text"]{
+    border-color: grey;
+    height:2rem;
+    border:0.1rem solid grey;
+
+}
+input:focus-visible {
+    outline:none;
+}
+.advancedbutton{
+    padding: 0.3rem;
+    margin: 0.3rem;  
+    background-color: #4d90fe;
+    color: #fff;
+    border: 0.1rem solid #4d90fe;
+}
+input.button:hover{
+    margin:0.2rem;
+    border: 0.2rem solid #dadce0;
+}
+@media only screen and (max-width: 1056px) {
+    .help{
+        visibility: hidden;
+    }
+}
